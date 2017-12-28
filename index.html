@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter|Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="assets/script.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="startPage">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="jumbotron">
+                        <h1 class="display-3">Hidden Figures</h1>
+                        <p class="lead"></p>
+                        <hr class="my-2">
+                        <p>You will be given a number at random to begin the game. Your task? click on the 4 crystals below
+                            to add up to your assigned number. Each crystal adds a different value to your score, and the
+                            numbers will change with each playthrough. NOT SO FAST! go over your assigned number and you
+                            lose, so CLICK AT YOUR OWN RISK...</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" name="" id="startButton" class="btn btn-light" btn-lg btn-block>Start!</button>
+                </div>
+            </div>
+        </div>
+        <div id="gamePage">
+            <div class="row">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Score to Guess</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h1 id="correct-number">???</h1>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Click to Guess</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <button id="button-1" class="crystal">
+                            <h1>?</h1>
+                        </button>
+                        <button id="button-2" class="crystal">
+                            <h1>?</h1>
+                        </button>
+                        <button id="button-3" class="crystal">
+                            <h1>?</h1>
+                        </button>
+                        <button id="button-4" class="crystal">
+                            <h1>?</h1>
+                        </button>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Your Score</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h1 id="result">0</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="endPage">
+            <div class="jumbotron">
+                <h1 class="display-3">Game Over!</h1>
+                <p class="wins">Wins: 0</p>
+                <hr class="my-2">
+                <p class="losses">Losses: 0</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" id="resetButton" role="button">Play Again?</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN
+                        " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh
+                        " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ
+                        " crossorigin="anonymous "></script>
+</body>
+
+</html>
